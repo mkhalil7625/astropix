@@ -14,3 +14,10 @@
     {{/each}}
 </div>
 
+{{#if favorites}}
+    <div class="all-delete">
+        <form action="favorites/deleteAll" method="POST">
+            <input class="btn btn-danger" type="submit" value="Delete all images">
+        </form>
+    </div>
+{{/if}}
